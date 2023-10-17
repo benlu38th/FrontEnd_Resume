@@ -1,0 +1,30 @@
+@mixin background($color1, $color2){
+    background: linear-gradient(70deg, $color1,	$color2)	;
+}
+//RWD
+@mixin smallerScreen {
+    @media (max-width: 1279px) {
+      @content;
+    }
+}
+@mixin ipad {
+    @media (max-width: 965px) {
+      @content;
+    }
+}
+@mixin small {
+    @media (max-width: 765px) {
+      @content;
+    }
+}
+@mixin iphone {
+    @media (max-width: 590px) {
+      @content;
+    }
+}
+@mixin iphoneSE {
+  @media (max-width: 380px) {
+    @content;
+  }
+}
+  

@@ -1,0 +1,474 @@
+body{
+  font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+}
+.container{
+  width: 70%;
+  @include smallerScreen {
+    width: 100%;
+  } 
+  margin:10px auto;
+}
+  .box0{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    width: 90px;
+    height: 40px;
+    top:50px;
+    left:85%;
+    @include iphone {
+      left:-3%;
+    }
+    @include iphoneSE{
+      width: 20px;
+      top:100px;
+      left:2%;
+    }
+    a:hover{
+      font-size:$textSize-M;
+      @include iphone {
+        font-size:$textSize-S;
+      }
+      color:rgb(239, 226, 215);
+      font-weight:bold;
+      border:10px Solid $textSpecialColor;
+      background-color: $textSpecialColor;
+      @include smallerScreen {
+        border:5px Solid $textSpecialColor;
+      }
+      @include ipad {
+        border:2px Solid $textSpecialColor;
+      }
+      @include small {
+        border:2px Solid $textSpecialColor;
+      }
+      @include iphone {
+        border:2px Solid $textSpecialColor;
+      }
+    };
+    a{
+      font-size:$textSize-M;
+      @include iphone {
+        font-size:$textSize-S;
+      }
+      border:5px Solid 	#D2B48C;
+      @include smallerScreen {
+        border:2px Solid #D2B48C;
+      }
+      @include ipad {
+        border:2px Solid #D2B48C;
+      }
+      @include iphone {
+        border:2x Solid #D2B48C;
+      }
+      color:$backgroundColor-Light;
+      background-color: 	#D2B48C;
+      text-decoration:none;
+    };
+  }
+  .main{
+    padding-left: 20%;
+    background:$backgroundColor-Dark;
+    padding: 8% 10%  35px 10%;
+    @include smallerScreen {
+      padding: 8% 10%  35px 10%;
+    }
+    @include ipad {
+      padding: 8% 2%  35px 2%;
+    }
+    display: flex;
+    @include smallerScreen {
+      display: flex;
+    }
+    @include ipad {
+      display: flex;
+    }
+    @include small {
+      display: flex;
+    }
+    @include iphone {
+      display: flex;
+      flex-direction: column;
+    }
+    align-items: flex-end;
+    @include small {
+      align-items: center;
+    }
+    @include iphone {
+      align-items: center;
+    }
+    .avatar {
+      position:relative;
+      .box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 200px;
+        @include smallerScreen {
+          width: 230px;
+          height: 230px;
+        }
+        @include ipad {
+          width: 230px;
+          height: 230px;
+        }
+        @include small {
+          width: 150px;          
+          height: 150px
+        }
+        @include iphone {
+          width: 180px;          
+          height: 180px
+        }
+      }
+      .box2{
+        @include background(#140101, $textSpecialColor);
+        position:absolute;
+        top:-7px;
+        right:10px;
+      }
+      img{
+        width: 200px;
+        z-index: 1;
+        @include smallerScreen {
+          width: 230px;
+          height: 230px;
+        }
+        @include ipad {
+          width: 230px;
+          height: 230px;
+        }
+        @include small {
+          width: 150px;          
+          height: 150px;
+        }
+        @include iphone {
+          width: 180px;
+          height: 180px;
+        }
+      }
+
+    }
+    .info1{
+      ul{  
+        @include iphone{
+          padding-inline-start: 0px;
+        }
+      }
+      li{
+        margin: 10px;
+        color:black;
+      };
+      p{
+        color:$textSpecialColor;
+        font-size:$textSize-M;
+        @include smallerScreen {
+          font-size:$textSize-M;
+        }
+        @include ipad {
+          font-size: $textSize-M;
+        }
+      };
+    }
+    .info2{
+      ul{
+        margin:2%;
+        @include small {
+          margin-top:10%;
+          margin-left:0px;
+        }
+        @include iphone {
+          margin:-5%;
+          margin-left:-10%;
+          padding-inline-start: 0px;
+        }
+      }
+
+      li{
+        list-style:none;
+        line-height: 30px;
+        white-space: nowrap;
+        font-size:$textSize-M;
+        @include smallerScreen {
+          font-size:$textSize-M;
+        }
+        @include ipad {
+          font-size:$textSize-M;
+        }
+        @include small {
+          font-size:$textSize-S;
+        }
+        @include iphone {
+          font-size:17px;
+          margin-left:60px;
+        }
+      }
+
+    }
+  }
+  .experience{
+    background:$backgroundColor-Light;
+    padding: 35px 100px;
+    @include smallerScreen {
+      padding: 35px 100px;
+    }
+    @include ipad {
+      padding: 20px 50px;
+    }
+    @include small {
+      padding: 10px 20px;
+    }
+    @include iphone {
+      padding: 5px 10px;
+    }
+    ol{
+      li{
+        margin:15px;
+      }
+    }
+  }
+  .skill{
+    background:$backgroundColor-Dark;
+    padding: 35px 100px;
+    @include smallerScreen {
+      padding: 35px 100px;
+    }
+    @include ipad {
+      padding: 20px 50px;
+    }
+    @include iphone {
+      padding: 5px 10px;
+    }
+  }
+  .footer{
+    background:$backgroundColor-Light;
+    margin-top:-20px;
+    padding: 5px ;
+    text-align: center;
+    border:1px solid #6d3507;
+  }
+  h1{
+    color:black;
+    font-size: $textSize-L;
+    @include smallerScreen {
+      font-size: $textSize-L;
+    }
+    @include ipad {
+      font-size: $textSize-L;
+    }
+    @include iphone {
+      font-size: $textSize-L;
+    }
+  }
+
+  .infoLogo {
+    text-align: right;
+
+    @include small {
+      text-align:right;
+      align-items: right;
+    }
+    .infoLofoBox{
+      align-items: right;
+    }
+    img{
+      width:90px;
+      border-radius: 70px;
+    }
+  }
+  .work, .school, .pro{
+    display: flex;
+    @include smallerScreen {
+      display: flex;
+    }
+    @include ipad {
+      display: flex;
+    }
+    @include small {
+      display: flex;
+      flex-direction: column;
+    }
+    @include iphone {
+      display: flex;
+      flex-direction: column;
+    }
+    justify-content: space-between;
+    @include small {
+      align-items: center;
+    }
+    @include iphone {
+      align-items: center;
+    }
+    margin-bottom:10px;
+  }
+  .left{
+    width: 20%;
+    @include small {
+      width: 100%;
+    }
+    @include iphone {
+      width: 100%;
+    }
+    h2{
+      color:black;
+      font-size:$textSize-L;
+      @include ipad {
+        text-align:center;
+        margin-bottom: 10px;
+      }
+      @include iphone {
+        text-align:center;
+        margin-bottom: 10px;
+      }
+      @include iphone {
+        text-align:center;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .center{
+    width: 55%;
+    @include small {
+      width: 100%;
+
+    }
+    @include iphone {
+      width: 100%;
+
+    }
+    h2{
+        color:$textMainColor;
+        font-size:$textSize-L;
+        @include small {
+          font-size:$textSize-M;
+        }
+    }
+    p{
+      color:$textSide1Color;
+      font-size:$textSize-L;
+      @include small {
+        font-size:$textSize-M;
+      }
+    }
+  }
+  .right{
+    width:25%;
+    @include small {
+      width: 100%;
+      justify-content: center;
+    }
+    @include iphone {
+      width: 100%;
+      text-align:right;
+    }
+    p{
+        text-align: right;
+        color:$textSide1Color;
+        font-size:$textSize-M;
+        @include smallerScreen {
+          font-size:25px;
+        }
+        @include ipad {
+          font-size:20px;
+        }
+        @include iphone {
+          font-size:20px;
+        }
+    }
+  }
+  .schoolLogo{
+    text-align: right;
+
+    img{
+      text-align: right;
+      width:80px;
+      @include small {
+        text-align: center;
+      }
+    }
+  } 
+  .calPhoto{
+    display:flex;
+    justify-content: center;
+    @include small {
+      margin-top:5%;
+      justify-content: right;
+    }
+    font-size: 50px;
+    i{
+      border: 0.5px solid black;
+      border-radius: 150%;
+    }
+    p{
+      padding-left:30px;
+      font-size: 50px; 
+      rotate: (45deg);
+    }
+  }
+  .taxPhoto{
+    display:flex;
+    justify-content: right;
+    @include small {
+      margin-top:5%;
+      justify-content: right;
+    }
+    font-size: 50px;
+    i{
+      border: 1px solid black;
+      border-radius: 150%;
+    }
+    p{
+      margin-right:60px;
+      @include small {
+        margin-right:0px;
+      }
+      font-size: 50px; 
+      rotate: (90deg);
+    }
+  }
+  .excelPhoto{
+    display:flex;
+    justify-content: center;
+    @include small {
+      justify-content: right;
+    }
+    img{
+      width:60px;
+      border: 1px solid black;
+      border-radius: 100%;
+    }
+    p{
+      text-align: bottom;
+      padding-left:30px;
+      font-size: 50px; 
+      rotate: (-45deg);
+    }
+  }
+  .EN{
+    line-height: 10px;
+    font-size: $textSize-L;
+    @include small{
+    font-size: $textSize-M;
+    }
+    position:relative;
+    top:-40px;
+    @include small {
+      top:0px;
+    } 
+    color:$textMainColor;
+    line-height: 0.5px;
+    span{
+      font-size: $textSize-L;
+      color:$textSpecialColor;
+      white-space: nowrap;
+    }
+  }
+  .nowrap{
+    ol{
+      li{
+        word-wrap:break-word;
+      }
+    }
+  }

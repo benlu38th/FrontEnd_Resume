@@ -1,0 +1,103 @@
+@mixin color($color, $size){
+    color: $color;
+    font-size: $size;
+}
+
+.container{
+  background: url(img/background.jpg);
+  background-attachment: fixed;
+  border: 15px solid white;
+  padding: 10px;
+}
+.main{
+  display: flex;
+  align-items: flex-end;
+}
+.avatar img{
+  width: 200px;
+  border-radius: 50%;
+}
+h1{
+  @include color(black, 30px);
+}
+.info p{
+  font-size:20px;
+}
+hr{
+  background: gray;
+  border:2px solid gray;
+  margin-top: 20px;
+}
+.work{
+  display: flex;
+}
+.pro{
+  display: flex;
+}
+h2{
+  margin:0px;
+}
+.work-left {
+  margin-right: 120px;
+}
+.work-left h2{
+  font-size:30px;
+}
+p{
+  margin:0px;
+}
+.work-center p{
+  font-size:30px;
+}
+ol{
+  padding-left: 30px;
+  font-size:30px;
+}
+.school{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom:25px;
+}
+.school-text{
+  display:flex;
+}
+.school-left {
+  margin-right: 120px;
+}
+.school-left h2{
+  font-size:30px;
+}
+.school-center h2{
+  font-size:30px;
+}
+.school-center p{
+  font-size:30px;
+}
+.school-right p{
+  font-size:30px;
+}
+.pro{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom:25px;
+}
+.pro-text{
+  display:flex;
+}
+.pro-left {
+  margin-right: 120px;
+}
+.pro-left p{
+  font-size:30px;
+}
+.pro-left h2{
+  font-size:30px;
+}
+.pro-right p{
+  font-size:30px;
+}
+.blank{
+  opacity: 0.0;
+}
+
+
